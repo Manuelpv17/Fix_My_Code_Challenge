@@ -20,21 +20,21 @@ class Square():
 
     @property
     def width(self):
-        return self.__size
+        return self.__width
 
     @width.setter
     def width(self, value):
         self.check_size(value)
-        self.__size = value
+        self.__width = value
 
     @property
     def height(self):
-        return self.__size
+        return self.__height
 
     @height.setter
     def height(self, value):
         self.check_size(value)
-        self.__size = value
+        self.__height = value
 
     def area_of_my_square(self):
         """ Area of the square """
