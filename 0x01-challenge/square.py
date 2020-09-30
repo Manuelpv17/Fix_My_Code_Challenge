@@ -13,6 +13,7 @@ class Square():
         self.height = height
 
     def check_size(self, value):
+        """ Check """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -20,19 +21,23 @@ class Square():
 
     @property
     def width(self):
+        """ width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """ width """
         self.check_size(value)
         self.__width = value
 
     @property
     def height(self):
+        """ height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """ height"""
         self.check_size(value)
         self.__height = value
 
