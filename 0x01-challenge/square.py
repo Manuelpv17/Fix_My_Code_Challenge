@@ -9,9 +9,7 @@ class square():
         for key, value in kwargs.items():
             setattr(self, key, value)
         if self.width != self.height:
-            print("Not a square :/")
-            self.width = 0
-            self.height = 0
+            raise TypeError("SQUARE I SAID!")
 
     def area_of_my_square(self):
         """ Area of the square """
