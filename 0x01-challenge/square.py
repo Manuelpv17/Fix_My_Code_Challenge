@@ -2,25 +2,27 @@
 """ My Square """
 
 
-class square():
+class Square():
     """ Class Square """
-    size = 0
+
+    width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
-        if kwargs:
-            self.size = kwargs["width"]
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.size * self.size
+        return self.width * self.width
 
     def PermiterOfMySquare(self):
         """ Perimeter """
-        return (self.size * 2) + (self.size * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ Print """
-        return "{}/{}".format(self.size, self.size)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
