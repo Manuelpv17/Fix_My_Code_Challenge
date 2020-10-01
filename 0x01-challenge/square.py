@@ -3,23 +3,23 @@
 
 
 class Square():
-    """ Class Square """
+    """ Class Square         """
     width = 0
     height = 0
 
     def __init__(self, width, height):
-        """ Init """
+        """ Init                   """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """ width"""
+        """ width                    """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ width """
+        """ width                    """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -29,12 +29,12 @@ class Square():
 
     @property
     def height(self):
-        """ height"""
+        """ height                 """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ height"""
+        """ height                 """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -43,15 +43,15 @@ class Square():
             self.__height = value
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """ Area of the square                """
         return self.width * self.height
 
     def permiter_of_my_square(self):
-        """ Perimeter """
+        """ Perimeter                            """
         return ((self.width * 2) + (self.height * 2))
 
     def __str__(self):
-        """ Print """
+        """ Print                               """
         return "{}/{}".format(self.width, self.height)
 
 
